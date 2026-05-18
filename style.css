@@ -1,0 +1,369 @@
+/* Warna Utama */
+:root {
+  --cokelat-tua: #5d4037;
+  --cokelat-muda: #8d6e63;
+  --emas-gamelan: #d4af37;
+  --krem-halus: #fdf5e6;
+}
+
+/* Navigasi */
+.bg-brown {
+  background-color: var(--cokelat-tua) !important;
+}
+
+/* Kartu Artikel */
+.article-card {
+  border-radius: 15px !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #ffffff;
+}
+
+/* Hover effect: kartu naik sedikit */
+.article-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(93, 64, 55, 0.2) !important;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  min-height: 3rem;
+  /* Menjaga agar tinggi judul seragam */
+}
+
+/* Tombol Cokelat Custom */
+.btn-brown {
+  background-color: var(--cokelat-tua);
+  color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  font-weight: 600;
+}
+
+.btn-brown:hover {
+  background-color: var(--emas-gamelan);
+  color: #000;
+}
+
+/* Animasi Muncul (Reveal) */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Typography */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.text-brown {
+  color: var(--cokelat-tua);
+}
+
+.navbar .nav-link {
+  padding: 6px 10px;
+  color: #DFD3C3;
+}
+
+#beranda {
+  text-shadow: #000 1px 1px;
+
+}
+
+#beranda h1 {
+  color: aliceblue;
+}
+
+#beranda p {
+  color: #fff;
+  font-weight: bold;
+}
+
+.background-beranda {
+  background-image: url("../img/pilketos.jpeg");
+  background-position: center;
+  color: white;
+  background-size: cover;
+  min-height: 400px;
+  padding: 60px 0;
+  position: relative;
+}
+
+.background-beranda .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.custom-info {
+  background-color: lightskyblue;
+  color: #fff;
+  transform: scale(.9);
+  margin: 10px;
+  text-align: center;
+}
+
+.about-section-padding {
+  background-color: #DFD3C3;
+}
+
+#profil .display-3::before,
+#profil .display-3::after {
+  background-color: #6d3d06;
+  content: '';
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 25%;
+
+}
+
+h2::before {
+  right: .5em;
+  margin-left: -50%;
+}
+
+h2::after {
+  left: .5em;
+  margin-right: -50%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gallery {
+  background-color: #F8EDE3;
+  padding: 80px 0;
+  min-height: auto;
+}
+
+.gallery img {
+  background-color: #ffffff;
+  padding: 15px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.gallery-modal .modal-img {
+  width: 100%;
+}
+
+:root {
+  --cokelat-tua: #5d4037;
+  --cokelat-muda: #8d6e63;
+  --emas-gamelan: #d4af37;
+  --krem-halus: #fdf5e6;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background-color: #fff;
+}
+
+.navbar {
+  background-color: var(--cokelat-tua) !important;
+  border-bottom: 3px solid var(--emas-gamelan);
+}
+
+.navbar .nav-link {
+  color: white !important;
+}
+
+.navbar .nav-link:hover {
+  color: var(--emas-gamelan) !important;
+}
+
+.text-brown {
+  color: var(--cokelat-tua);
+}
+
+.bg-brown {
+  background-color: var(--cokelat-tua);
+}
+
+.btn-brown {
+  background-color: var(--cokelat-tua);
+  color: white;
+  border-radius: 20px;
+}
+
+.btn-brown:hover {
+  background-color: var(--emas-gamelan);
+  color: black;
+}
+
+.card {
+  border: 1px solid var(--cokelat-muda);
+  transition: all 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(93, 64, 55, 0.2);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Styling Kartu Artikel */
+.article-card {
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Kartu: Hanya naik sedikit & tambah bayangan (Tanpa Zoom Gambar) */
+.article-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(93, 64, 55, 0.2) !important;
+}
+
+
+
+/* Tombol Cokelat */
+.btn-brown {
+  background-color: var(--cokelat-tua);
+  color: white;
+  border-radius: 10px;
+  padding: 8px 20px;
+  border: none;
+}
+
+.btn-brown:hover {
+  background-color: var(--emas-gamelan);
+  color: black;
+}
+
+/* Animasi Reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* css galeri */
+.bg-brown {
+  background-color: #8B4513 !important;
+  /* Warna Coklat Khas Jawa */
+}
+
+.text-brown {
+  color: #8B4513 !important;
+}
+
+.navbar-brown .nav-link {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.navbar-brown .nav-link.active,
+.navbar-brown .nav-link:hover {
+  color: #ffffff !important;
+  font-weight: bold;
+}
+
+/* Animasi Kartu Foto */
+.gallery-card {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+  transition: transform 0.3s ease;
+}
+
+.gallery-card:hover {
+  transform: scale(1.05);
+  /* Efek membesar dikit saat di-hover */
+  z-index: 1;
+}
+/* css galeri anjog mene*/
+/* lanjyut css profill /*
+
+/*ini css yang diprofil */
+.bg-brown {
+  background-color: #8B4513 !important;
+}
+
+.text-brown {
+  color: #8B4513 !important;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar .nav-link {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #ffffff !important;
+  font-weight: bold;
+  border-bottom: 2px solid #f0d9b5;
+}
+
+/* ini buat animaasi profil */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* css profil guisssss*/
+.profile-img {
+  border: 5px solid #8B4513;
+  padding: 5px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: rotate(5deg) scale(1.05);
+}
+/* profil sampe sini ueyy */
